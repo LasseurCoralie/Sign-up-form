@@ -1,0 +1,116 @@
+body{
+    background: linear-gradient(rgb(220, 20, 60), rgb(220, 20, 97));
+    font-family: 'Roboto Slab', serif;
+    position: relative
+}
+
+.posts{
+    width: 400px;
+    background-color: white;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(54, 4, 14);
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 200px);
+
+}
+
+fieldset{
+    border-style: none;
+    padding: 0 0 0 3em;
+    margin: 0 20px 0 0;
+    border-left : 3px solid #DC143C;
+}
+
+fieldset.valide{
+    border-left : 3px solid rgb(20, 220, 160);
+}
+
+h2.form-title{
+    font-size: bold;
+    font-style: italic;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+}
+
+div.label-input-group{
+    margin-bottom: 1em;
+}
+
+input{
+    width: calc(100% - 20px);
+    height: 2em;
+    padding: .2em;
+    margin: .4em 0;
+    
+}
+
+textarea{
+    width: calc(100% - 20px);
+    height: 5em;
+    resize: none;
+    margin: .4em 0;
+}
+
+textarea, input{
+    background-color: rgb(241, 241, 241);
+    border-style: none;
+    border-bottom: 1px solid #DC143C;
+}
+
+textarea.valide, input.valide{
+    background-color: rgb(224, 252, 239);
+    border-style: none;
+    border-bottom: 1px solid rgb(20, 220, 160);
+}
+
+
+textarea::placeholder{
+    height: 3em;
+}
+
+input::placeholder, textarea::placeholder{
+    font-family: 'Roboto Slab', serif;;
+    font-size: 1em;
+    padding: 5px;
+}
+
+input:focus, textarea:focus{
+    background-color: rgb(230, 230, 230);
+    outline: none;
+}
+
+label.input-title{
+    font-size: 1.1em;
+    margin: 20px 0;
+}
+
+span.indication-message{
+    font-size: .8em;
+    color:rgb(133, 133, 133);
+    font-style: italic;
+}
+
+div.button-group{
+    text-align: center;
+    margin-top: 3em;
+}
+
+button.pure-button{
+    background-color: #DC143C;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    border-style: none;
+    transition: 0.5s;
+}
+
+button.pure-button:hover{
+    background-color: rgb(20, 220, 160);
+    box-shadow: 0 0 5px rgb(165, 165, 165);
+    padding: 0.5em 1.5em;
+}
