@@ -1,22 +1,18 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
-        <title>La forme du cookie</title>
-    </head>
+<?php require 'header.tpl.php' ?>
 
-    <body>
         <section class ="posts">
-            <h2 class="form-title">Formulaire</h2>
-            <form action="" method="post">
+            <h2 class="form-title">Bienvenu.e parmi nous</h2>
+            <form id="form-inscription" action="login.php" method="post">
                 <fieldset>
                     <div class="label-input-group">
                         <label class="input-title">pseudo</label>
                         <input class="placeholder-input" id="pseudo" type="text" name="pseudo" placeholder="indiquez votre pseudo…">
+                        <span class="indication-message">Remplir ce champs est indispensable pour la suite</span>
+                    </div>
+
+                    <div class="label-input-group">
+                        <label class="input-title">mot de passe</label>
+                        <input class="placeholder-input" id="password" type="password" name="password" placeholder="indiquez votre mot de passe…">
                         <span class="indication-message">Remplir ce champs est indispensable pour la suite</span>
                     </div>
 
@@ -26,16 +22,7 @@
                         <span class="indication-message">Remplir ce champs est indispensable pour la suite</span>
                     </div>
 
-                    <div class="label-input-group">
-                        <label class="input-title">âge</label>
-                        <input class="placeholder-input" id="age" type="number" name="age" placeholder="indiquez votre âge…">
-                        <span class="indication-message">Remplir ce champs est indispensable pour la suite</span>
-                    </div>
-
-                    <div class="label-input-group">
-                        <label class="input-title">message</label>
-                        <textarea id="message" class="placeholder-input" placeholder="racontez-nous votre histoire…"></textarea>
-                        <span class="indication-message">Remplir ce champs est indispensable pour la suite</span>
+                    <div class="error-input">
                     </div>
 
                 </fieldset>
@@ -44,5 +31,5 @@
                 </div>
             </form>    
         </section>
-    </body>
-</html>
+
+<?php require 'footer.php' ?>

@@ -1,5 +1,31 @@
+header#header-menu{
+    background-color: rgb(241, 241, 241);
+    box-shadow: 5px 0px 20px rgba(54, 4, 14, 0.466);
+}
+
+ul.header-nav-menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li.header-nav-menu-element{
+    padding: 2em 1em 1em;
+}
+
+a.header-nav-menu-link{
+    color: black;
+    text-decoration: none;
+}
+
+a.header-nav-menu-link:hover{
+    color: rgb(220, 20, 60);
+    transition: .8s;
+    cursor: pointer;
+}
+
 body{
-    background: linear-gradient(rgb(220, 20, 60), rgb(220, 20, 97));
+    background-color: rgb(220, 20, 60);
     font-family: 'Roboto Slab', serif;
     position: relative
 }
@@ -11,8 +37,8 @@ body{
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgb(54, 4, 14);
     position: absolute;
-    top: 100px;
-    left: calc(50% - 200px);
+    top: 150px;
+    left: calc(50% - 235px);
 
 }
 
@@ -65,6 +91,11 @@ textarea.valide, input.valide{
     border-bottom: 1px solid rgb(20, 220, 160);
 }
 
+textarea.invalide, input.invalide{
+    background-color: rgb(248, 192, 203);
+    border-style: none;
+}
+
 
 textarea::placeholder{
     height: 3em;
@@ -113,4 +144,5 @@ button.pure-button:hover{
     background-color: rgb(20, 220, 160);
     box-shadow: 0 0 5px rgb(165, 165, 165);
     padding: 0.5em 1.5em;
+    cursor: pointer;
 }
