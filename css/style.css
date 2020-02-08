@@ -1,5 +1,5 @@
 header#header-menu{
-    background-color: rgb(241, 241, 241);
+    background-color: white;
     box-shadow: 5px 0px 20px rgba(54, 4, 14, 0.466);
 }
 
@@ -10,7 +10,7 @@ ul.header-nav-menu-list{
 }
 
 li.header-nav-menu-element{
-    padding: 2em 1em 1em;
+    padding: 1em 1em 1em;
 }
 
 a.header-nav-menu-link{

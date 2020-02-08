@@ -1,9 +1,10 @@
 <?php 
-    session_start();
+    // session_start();
 
-    setcookie('nom', 'coralie');
+    // setcookie('nom', $_POST['pseudo']);
+    // setcookie('password', $_POST['password']);
 
-    var_dump($_COOKIE['nom']);
+    // var_dump($_COOKIE['nom']);
 
     require 'data.php';
     require 'function.php';
