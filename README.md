@@ -34,7 +34,7 @@ Input conditionnalisé avec affichage pour l'utilisateur
 
 ----
 
-## Travail non abouti - *research* :
+## Idées d'amélioration - *research* :
 
 Début de recherche sur la création de cookies et de session via PHP.
 
